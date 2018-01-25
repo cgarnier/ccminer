@@ -28,3 +28,11 @@ nvidia-docker run \
   * Master (latest) is klaust-16.04-cuda9.1 is KlausT version with cuda 9.1 (require 390.11)
   * klaust-16.04-cuda9.0 (Some issues on 384.111)
   * tpruvot-16.04-cuda9.0
+
+# Related projects and sources
+
+  * https://github.com/kahiroka/ccminer-in-docker
+  * https://github.com/KlausT/ccminer
+  * https://github.com/tpruvot/ccminer
+  * https://gitlab.com/nvidia/cuda
+  * 390.11 install: https://askubuntu.com/a/851144
