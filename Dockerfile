@@ -12,7 +12,7 @@ RUN apt-get -y update \
     libjansson-dev
 
 USER miner
-RUN cd && git clone -b cuda9 https://github.com/KlausT/ccminer.git
-RUN cd ~/ccminer && ./build.sh
+RUN cd && git clone https://github.com/tpruvot/ccminer.git
+RUN cd ~/ccminer && ./autogen.sh && ./configure --with-cuda=/usr/local/cuda && make -j$(($(nproc)+1))
 
 ENTRYPOINT ["/home/miner/ccminer/ccminer"]
