@@ -1,4 +1,4 @@
-FROM nvidia/cuda:9.1-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-devel-ubuntu16.04
 
 RUN groupadd -g 2000 miner && \
     useradd -u 2000 -g miner -m -s /bin/bash miner && \
